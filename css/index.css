@@ -1,0 +1,225 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desatured-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 28vw;
+    border-radius: 0.6rem;
+    background-color: #fff;
+    box-shadow: 3px 1px 12px black;
+}
+
+.principal-img {
+    width: 28vw;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.text-content {
+    padding: 1rem 2rem;
+}
+
+.text-content > h1 {
+    color: var(--dark-blue);
+    margin: 1rem 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text-content > p {
+    color: var(--desatured-blue);
+}
+
+.annual-box {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.annual-text-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem 0 1.2rem;
+}
+
+#annual {
+    color: var(--dark-blue);
+}
+
+#change {
+    text-decoration: underline;
+    color: var(--bright-blue);
+    transition: .2s ease-out;
+}
+
+#change:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(245, 88%, 45%);
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 0 2rem;
+    margin-bottom: 1.6rem;
+}
+
+#proceed-btn {
+    padding: 0.65rem 0;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+
+    color: #ffffffc9;
+    background-color: var(--bright-blue);
+
+    border: none;
+    border-radius: 0.4rem;
+
+    transition: .2s ease-out;
+}
+
+#proceed-btn:hover {
+    cursor: pointer;
+
+    background-color: hsl(245, 46%, 57%);
+    color: #fff;
+}
+
+#cancel-btn {
+    padding: 0.65rem 0;
+    font-weight: 700;
+
+    color: var(--desatured-blue);
+
+    border: none;
+    border-radius: 0.4rem;
+
+    transition: .2s ease-out;
+}
+
+#cancel-btn:hover {
+    cursor: pointer;
+
+    color: hsl(224, 62%, 40%);
+}
+
+@media (max-width: 1100px) {
+    main {
+        width: 35vw;
+    }
+
+    .principal-img {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 850px) {
+    main {
+        width: 50vw;
+    }
+
+    .principal-img {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        width: 55vw;
+    }
+
+    .principal-img {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 540px) {
+    main {
+        width: 60vw;
+    }
+
+    .principal-img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 70vw;
+    }
+
+    .principal-img {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 420px) {
+    main {
+        width: 75vw;
+    }
+
+    .principal-img {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 85vw;
+    }
+
+    .principal-img {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 342px) {
+    main {
+        width: 90vw;
+    }
+
+    .principal-img {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 315px) {
+    main {
+        width: 95vw;
+    }
+
+    .principal-img {
+        width: 95vw;
+    }
+}
+
